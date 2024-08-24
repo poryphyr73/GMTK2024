@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b63883d6a3b7749be2e02cd2bd73ba, type: 3}
+  m_Name: HorizontalStake
+  m_EditorClassIdentifier: 
+  cost: 3
+  preview: {fileID: -1281599905, guid: dac59d08b4640d34ea1de7cc4b8db92b, type: 3}
+  holo: {fileID: 21300000, guid: 1f2cef5b4e1e0674fb8ac237d595082e, type: 3}
+  obstacle: {fileID: 7279708098094884198, guid: a0ff896da17d0e14588bf3b4f80a6116, type: 3}
