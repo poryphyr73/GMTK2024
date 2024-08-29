@@ -64,6 +64,14 @@ public class PlayerController : MonoBehaviour
         float velocityX = Mathf.Lerp(0, maxHorizontalVelocity * moveDirection, accelerationProgress);
 
         globalVelocityX = velocityX;
+
+        float f = HasWallCollision();
+        if (f != 0) {
+            playerBody.gravityScale = 3;
+        } else {
+            playerBody.gravityScale = 10;
+        }
+
     }
 
     private void HandleJump()
@@ -192,7 +200,7 @@ public class PlayerController : MonoBehaviour
 
     float HasWallCollision()
     {
-        float distance = transform.localScale.x / 2 + 0.1f;
+        float distance = transform.localScale.x / 2 + 0.5f;
 
         RaycastHit2D rightSideHit = Physics2D.Raycast(transform.position, Vector2.right, distance, floor);
         RaycastHit2D leftSideHit = Physics2D.Raycast(transform.position, Vector2.left, distance, floor);

@@ -24,7 +24,7 @@ public class CoinSpawner : MonoBehaviour
 
         Vector3 targetPosition = new Vector3(randomHorizontal, screenTop);
 
-        Instantiate(coinPrefabs[Random.Range(0, coinPrefabs.Length - 1)], targetPosition, Quaternion.identity);
+        Instantiate(coinPrefabs[Random.Range(0, coinPrefabs.Length)], targetPosition, Quaternion.identity);
         nextDrop += spawnRate;
     }
 }

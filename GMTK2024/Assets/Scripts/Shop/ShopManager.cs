@@ -1,3 +1,5 @@
+using System;
+using Random=System.Random;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -83,17 +85,20 @@ public class ShopManager : MonoBehaviour
 
     void RandomizeShop()
     {
-        for(int i = 0; i < currentObstacles.Length; i++)
+        List<ObstacleItem> tempObstacles = new List<ObstacleItem>();
+        tempObstacles.AddRange(possibleObstacles);
+        for(int i = 0; i < tempObstacles.Count; i++)
         {
+            Random random = new Random();
             int k;
-
-            while (true) 
-            {
-                k = Random.Range(0, possibleObstacles.Length);
-                if (possibleObstacles[k].cost <= balance + 1) break;
-            }
-
-            currentObstacles[i] = possibleObstacles[k];
+            k = random.Next(tempObstacles.Count);
+            // if (i == 0) {
+            //     while (tempObstacles[k].cost > balance || tempObstacles[k].cost !=  1) {
+            //         k = random.Next(tempObstacles.Count);
+            //     }
+            // }
+            currentObstacles[i] = tempObstacles[k];
+            tempObstacles.RemoveAt(k);
             InitializeSlot(i);
         }
     }

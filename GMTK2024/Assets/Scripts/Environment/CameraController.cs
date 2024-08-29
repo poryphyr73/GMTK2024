@@ -25,7 +25,7 @@ public class CameraController : MonoBehaviour
 
         float tempVelocity = velocity;
 
-        if (difference > 0) tempVelocity += difference * 2;
+        if (difference > 0) tempVelocity += difference * 10;
 
         Vector3 target = new Vector3(0f, 1000000f, 0f) + transform.position;
         transform.position = Vector3.MoveTowards(transform.position, target, tempVelocity * Time.deltaTime);

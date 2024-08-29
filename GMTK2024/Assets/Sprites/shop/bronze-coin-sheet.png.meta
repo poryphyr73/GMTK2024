@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5610616ad3c24c644b41bfa9c176733d
+guid: 36afb391e3918d8a9a62c45289640485
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coin-sheet_0
+      name: bronze-coin-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8d11eba62423634a80f9d2e364f856b
-      internalID: -1957937936
+      spriteID: da961b7e6a45b195593bb59e27c50e68
+      internalID: -983957556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: coin-sheet_1
+      name: bronze-coin-sheet_1
       rect:
         serializedVersion: 2
         x: 24
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba8577df85b64fe40aa812f82d0193e9
-      internalID: 1539441277
+      spriteID: 201b07aee867d4969a3aabd50a76d39d
+      internalID: 1381261929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: coin-sheet_2
+      name: bronze-coin-sheet_2
       rect:
         serializedVersion: 2
         x: 48
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d24a7cca4392b904a86af69ae666d045
-      internalID: 625863513
+      spriteID: 4252aa6b97cc154b1b69e7c39f6fc4e0
+      internalID: -415270815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: coin-sheet_3
+      name: bronze-coin-sheet_3
       rect:
         serializedVersion: 2
         x: 72
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49ad358ca5273c84eac25071913eb471
-      internalID: -262800431
+      spriteID: 1117829e94a5023d285932b112351b27
+      internalID: 1534254063
       vertices: []
       indices: 
       edges: []
@@ -191,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      coin-sheet_0: -1957937936
-      coin-sheet_1: 1539441277
-      coin-sheet_2: 625863513
-      coin-sheet_3: -262800431
+      bronze-coin-sheet_0: -983957556
+      bronze-coin-sheet_1: 1381261929
+      bronze-coin-sheet_2: -415270815
+      bronze-coin-sheet_3: 1534254063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
