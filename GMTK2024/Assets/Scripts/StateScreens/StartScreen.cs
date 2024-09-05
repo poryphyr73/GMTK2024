@@ -9,6 +9,7 @@ public class StartScreen : MonoBehaviour
 {
     [SerializeField] RawImage blackScreen;
     [SerializeField] float timeToFade;
+    [SerializeField] GameObject controlsScreen;
 
     private void Start()
     {
@@ -35,4 +36,15 @@ public class StartScreen : MonoBehaviour
         FindObjectOfType<ShopManager>().OpenShop();
         gameObject.SetActive(false);
     }
+
+    public void OpenControlsSheet(){
+        controlsScreen.SetActive(true);
+        gameObject.SetActive(false);
+    }
+
+    public void CloseControlsSheet(){
+        controlsScreen.SetActive(false);
+        gameObject.SetActive(true);
+    }
+
 }

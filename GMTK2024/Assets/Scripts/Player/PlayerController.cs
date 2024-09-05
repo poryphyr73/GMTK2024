@@ -142,6 +142,7 @@ public class PlayerController : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Death");
         Camera.main.GetComponent<CameraController>().enabled = false;
         FindObjectOfType<StartScreen>(true).gameObject.SetActive(false);
+        FindObjectOfType<ControlsScreen>(true).gameObject.SetActive(false);
         playerBody.gravityScale = 0;
         globalVelocityX = 0;
         playerBody.velocity = Vector3.zero;

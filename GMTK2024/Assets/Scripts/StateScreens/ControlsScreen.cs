@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class ControlsScreen : MonoBehaviour
 {
+    [SerializeField] GameObject startScreen;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void CloseControlsSheet(){
+        gameObject.SetActive(false);
+        startScreen.SetActive(true);
     }
 }
